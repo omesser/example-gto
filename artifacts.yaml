@@ -14,3 +14,6 @@ testmodel:
 testmodel2:
   path: testmodel2.text
   type: model
+testmodel3:
+  path: testmodel3.text
+  type: model
