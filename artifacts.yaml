@@ -11,3 +11,6 @@ segment:
 testmodel:
   path: models/testmodel.text
   type: model
+testmodel2:
+  path: testmodel2.text
+  type: model
