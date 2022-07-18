@@ -12,7 +12,7 @@ testmodel:
   path: models/testmodel.text
   type: model
 testmodel2:
-  path: testmodel2.text
+  path: models/testmodel2.text
   type: model
 testmodel3:
   path: testmodel3.text
