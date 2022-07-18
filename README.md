@@ -1,5 +1,6 @@
 # GTO Get Started
 
+
 This is an auto-generated repository for use in
 [GTO Get Started](https://github.com/iterative/gto).
 It is a step-by-step quick introduction into basic GTO concepts.
