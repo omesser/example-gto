@@ -1,8 +1,12 @@
 import pandas
 import pathlib
+import pickle
+
 from sklearn import model_selection
 from sklearn.linear_model import LogisticRegression
-import pickle
+
+import mlem.api
+
 url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = pandas.read_csv(url, names=names)
@@ -22,3 +26,5 @@ model.fit(X_train, Y_train)
 filename = pathlib.Path(pathlib.Path.cwd() / "models" / "model_sklearn_lr.sav")
 pickle.dump(model, open(filename, 'wb'))
 
+# save this with mlem
+mlem.api.save(model, str(pathlib.Path(pathlib.Path.cwd() / "models" / "model_sklearn_lr.sav")), external=True)
