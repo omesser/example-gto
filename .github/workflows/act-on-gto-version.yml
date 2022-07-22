@@ -11,4 +11,4 @@ jobs:
     steps:
     - name: Print the tag
       run: |
-        echo ${github.ref}
+        echo ${{ github.ref }}#refs/tags/
