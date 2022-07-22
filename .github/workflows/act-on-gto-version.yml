@@ -6,7 +6,7 @@ on:
 
 jobs:
   act:
-    name: "Version registration: ${GITHUB_REF#refs/tags/}"
+    name: "Version registration: ${{ GITHUB_REF#refs/tags/ }}"
     runs-on: ubuntu-latest
     steps:
     - name: Print the tag
