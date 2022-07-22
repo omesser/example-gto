@@ -15,7 +15,7 @@ seed = 7
 X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_size=test_size, random_state=seed)
 
 # Fit the model on training set
-model = LogisticRegression(max_iter=200)
+model = LogisticRegression(max_iter=300)
 model.fit(X_train, Y_train)
 
 # save the model to disk
