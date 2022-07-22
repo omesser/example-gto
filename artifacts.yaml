@@ -8,6 +8,9 @@ cv-class:
 segment:
   path: s3://mycorp/proj-ml/segm-model-2022-04-15.pt
   type: model
+sklearn-lr:
+  path: models/model_sklearn_lr.sav
+  type: model
 testmodel:
   path: models/testmodel.text
   type: model
