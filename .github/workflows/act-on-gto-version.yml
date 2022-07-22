@@ -1,0 +1,14 @@
+name: Act on artifact registrations and promotions
+on:
+  push:
+    tags:
+      - "**@v[0-9]+.[0-9]+**"
+
+jobs:
+  act:
+    name: Figure out what was registered/promoted and act on it
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print the tag
+      run: |
+        echo ${github.ref}

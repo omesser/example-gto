@@ -11,8 +11,8 @@ url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = pandas.read_csv(url, names=names)
 array = dataframe.values
-X = array[:,0:8]
-Y = array[:,8]
+X = array[:, 0:8]
+Y = array[:, 8]
 test_size = 0.33
 seed = 7
 
