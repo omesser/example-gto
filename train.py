@@ -27,4 +27,4 @@ filename = pathlib.Path(pathlib.Path.cwd() / "models" / "model_sklearn_lr.sav")
 pickle.dump(model, open(filename, 'wb'))
 
 # save this with mlem
-mlem.api.save(model, str(pathlib.Path(pathlib.Path.cwd() / "models" / "model_sklearn_lr.sav")), external=True)
+mlem.api.save(model, str(pathlib.Path(pathlib.Path.cwd() / "models" / "model_sklearn_lr.sav")), external=False)

@@ -11,6 +11,9 @@ segment:
 sklearn-lr:
   path: models/model_sklearn_lr.sav
   type: model
+sklearn-lr-mlem:
+  path: .mlem/model/models/model_sklearn_lr.sav
+  type: model
 testmodel:
   path: models/testmodel.text
   type: model
