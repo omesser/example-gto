@@ -6,9 +6,9 @@ on:
 
 jobs:
   act:
-    name: Figure out what was registered/promoted and act on it
+    name: "Version registration: ${GITHUB_REF#refs/tags/}"
     runs-on: ubuntu-latest
     steps:
     - name: Print the tag
       run: |
-        echo ${{ github.ref }}#refs/tags/
+        echo "yay ${GITHUB_REF#refs/tags/}"
