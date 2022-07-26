@@ -5,6 +5,12 @@ churn:
 cv-class:
   path: s3://mycorp/proj-ml/classif-v2.pt
   type: model
+deberta-tf:
+  labels:
+  - testing
+  - deberta
+  path: s3://odedm-testing/deberta-base/tf_model.h5
+  type: model
 segment:
   path: s3://mycorp/proj-ml/segm-model-2022-04-15.pt
   type: model
